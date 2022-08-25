@@ -1,0 +1,35 @@
+---
+import Button from "./Button.astro";
+---
+
+<section>
+    <figure class="w-full h-[607px]">
+        <img
+            class="w-full h-full object-cover"
+            src="https://www.fillmurray.com/1500/700"
+            alt=""
+        />
+    </figure>
+    <div
+        class="max-w-5xl rounded-md md:shadow-lg space-y-5 w-full mx-auto md:-mt-52 p-4 md:p-10 bg-white z-10 relative"
+    >
+        <h1 class="text-center text-orange-600 text-6xl font-bold">ZeBatucA</h1>
+        <p class="text-xl font-bold md:text-center">
+            Groupe de percussions et de tempbours d’intervention
+        </p>
+        <p class="max-w-3xl w-full mx-auto text-lg">
+            Sous la direction d'Elliot Amah, Zebatuca, c'est de la musique
+            chorégraphiée, des arts de la rue sans dessus-dessous, des
+            distributeurs de bonheur
+        </p>
+        <div class="flex md:justify-center gap-5">
+            <Button href="/contact">Nous contacter</Button>
+            <a
+                class="bg-white text-orange-600 rounded-md hover:bg-orange-200 transition px-7 py-4"
+                href="#"
+            >
+                En savoir plus
+            </a>
+        </div>
+    </div>
+</section>

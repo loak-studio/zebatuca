@@ -1,6 +1,5 @@
 ---
 import Logo from "../assets/logo-zebatuca.svg";
-import Hamburger from "./Hamburger.astro";
 const links = [
     {
         label: "Accueil",
@@ -8,7 +7,7 @@ const links = [
     },
     {
         label: "ZeBatuc'Action",
-        href: "/zebatucation",
+        href: "/zebatucaction",
     },
     {
         label: "Contact",
@@ -26,7 +25,7 @@ const links = [
         </a>
         <nav
             main-nav
-            class="transition z-10 h-screen w-screen left-0 top-0 md:w-auto md:h-auto origin-top opacity-0 md:opacity-100 bg-white fixed md:static scale-y-0 md:scale-y-100"
+            class="z-30 transition h-screen w-screen left-0 top-0 md:w-auto md:h-auto origin-top opacity-0 md:opacity-100 bg-white fixed md:static scale-y-0 md:scale-y-100"
         >
             <ul class="flex p-4 md:p-0 flex-col md:flex-row gap-4 md:gap-20">
                 {
@@ -43,7 +42,7 @@ const links = [
                 }
             </ul>
         </nav>
-        <button toggle-nav class="md:hidden z-20">
+        <button toggle-nav class="md:hidden z-40">
             <div
                 id="hamburger"
                 class="h-8 relative min-h-fit flex gap-1 flex-col"
