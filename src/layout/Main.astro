@@ -1,6 +1,7 @@
 ---
 import "../style/app.css";
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 const title = "ZeBatucA - Groupe de percussions et de tambours d’intervention";
 const description =
     "Vous organisez un événement de rue et vous voulez du soleil ? Nous sommes ce qu'il vous faut. Nous? Zebatuca, une vingtaine de musiciens originaires du Valenciennois et de la Wallonie picarde Nous? C'est à un défilé de notes et de couleurs que nous vous invitons. Aux sons de nos percus, les visages s'illuminent et les corps se trémoussent.";
@@ -36,11 +37,14 @@ const { meta } = Astro.props;
             property="twitter:image"
             content={meta && meta.image ? meta.image : image}
         />
+        <link rel="stylesheet" href="/slide-show/slide-show.css" />
+        <script type="module" src="/slide-show/slide-show.js"></script>
     </head>
 
     <body class="flex flex-col min-h-screen font-main md:overflow-auto">
         <Navbar />
         <slot />
+        <Footer />
         <script>
             import "../scripts/app.js";
         </script>
