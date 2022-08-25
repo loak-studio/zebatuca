@@ -1,0 +1,61 @@
+---
+import Logo from "../assets/logo-zebatuca.svg";
+import Hamburger from "./Hamburger.astro";
+const links = [
+    {
+        label: "Accueil",
+        href: "/",
+    },
+    {
+        label: "ZeBatuc'Action",
+        href: "/zebatucation",
+    },
+    {
+        label: "Contact",
+        href: "/contact",
+    },
+];
+---
+
+<header class="py-2.5 px-4 lg:px-0">
+    <div class="max-w-5xl flex items-center justify-between mx-auto">
+        <a class="inline-block" href="/">
+            <figure class="relative">
+                <img class="w-52" src={Logo} alt="Logo de ZeBatucA" />
+            </figure>
+        </a>
+        <nav
+            main-nav
+            class="transition z-10 h-screen w-screen left-0 top-0 md:w-auto md:h-auto origin-top opacity-0 md:opacity-100 bg-white fixed md:static scale-y-0 md:scale-y-100"
+        >
+            <ul class="flex p-4 md:p-0 flex-col md:flex-row gap-4 md:gap-20">
+                {
+                    links.map(({ label, href }) => (
+                        <li>
+                            <a
+                                class="hover:underline text-xl md:text-base"
+                                href={href}
+                            >
+                                {label}
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </nav>
+        <button toggle-nav class="md:hidden z-20">
+            <div
+                id="hamburger"
+                class="h-8 relative min-h-fit flex gap-1 flex-col"
+            >
+                <span class="transition w-8 rounded-full h-1 bg-black block">
+                </span>
+                <span class="transition w-8 rounded-full h-1 bg-black block">
+                </span>
+                <span class="transition w-8 rounded-full h-1 bg-black block"
+                ></span>
+            </div>
+            <span class="sr-only">Ouvrir le menu</span>
+        </button>
+    </div>
+</header>
