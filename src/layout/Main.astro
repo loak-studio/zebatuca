@@ -9,7 +9,7 @@ const image = Astro.url.origin + "/share.png";
 const { meta } = Astro.props;
 ---
 
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
@@ -43,7 +43,9 @@ const { meta } = Astro.props;
 
     <body class="flex flex-col min-h-screen font-main md:overflow-auto">
         <Navbar />
-        <slot />
+        <main class="flex-1">
+            <slot />
+        </main>
         <Footer />
         <script>
             import "../scripts/app.js";

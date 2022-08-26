@@ -1,1 +1,43 @@
-<footer class="bg-gray-900">footer</footer>
+---
+import Facebook from "./Icons/Facebook.astro";
+import Instagram from "./Icons/Instagram.astro";
+---
+
+<footer class="bg-gray-900 grid grid-cols-3">
+    <div class="bg-motif"></div>
+    <div class="col-span-2 flex gap-16 px-20 py-10">
+        <div>
+            <p class="text-white">Contact Elliot</p>
+            <p class="text-orange-600 text-2xl font-semibold">
+                0033.608.770.798
+            </p>
+
+            <p class="text-white">Contact Isabelle</p>
+            <p class="text-orange-600 text-2xl font-semibold">
+                0032.494.27.08.60
+            </p>
+        </div>
+        <div class="text-white space-y-5">
+            <div class="flex gap-2">
+                <a
+                    target="_blank"
+                    href="#"
+                    class="hover:bg-gray-700 p-2 rounded-md"
+                    ><Facebook />
+                </a>
+                <a
+                    target="_blank"
+                    href="#"
+                    class="hover:bg-gray-700 p-2 rounded-md"
+                    ><Instagram />
+                </a>
+            </div>
+            <p class="max-w-[64ch]">
+                Sous la direction d'Elliot Amah, Zebatuca, c'est de la musique
+                chorégraphiée, des arts de la rue sans dessus-dessous, des
+                distributeurs de bonheur
+            </p>
+            <span class="block">Site internet réalisé par loak.studio</span>
+        </div>
+    </div>
+</footer>
