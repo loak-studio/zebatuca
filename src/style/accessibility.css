@@ -1,0 +1,4 @@
+a,
+button {
+  @apply focus-visible:border-none focus-visible:outline-2 focus:outline-offset-4 focus-visible:rounded-sm  focus-visible:outline-dashed focus-visible:outline-orange-800;
+}
