@@ -1,43 +1,106 @@
 ---
 import Facebook from "./Icons/Facebook.astro";
 import Instagram from "./Icons/Instagram.astro";
+import Zebatuca from "../assets/logo-zebatuca-white.svg";
+const links = [
+    {
+        label: "Accueil",
+        href: "/",
+    },
+    {
+        label: "ZeBatuc'Action",
+        href: "/zebatucaction",
+    },
+    {
+        label: "Contact",
+        href: "/contact",
+    },
+    {
+        label: "RGPD",
+        href: "/rgpd",
+    },
+];
 ---
 
-<footer class="bg-gray-900 grid grid-cols-3">
-    <div class="bg-motif"></div>
-    <div class="col-span-2 flex gap-16 px-20 py-10">
+<footer class="bg-gray-900 py-12">
+    <div
+        class="max-w-6xl px-4 xl:px-0 mx-auto gap-8 lg:gap-0 flex-col lg:flex-row flex text-white justify-between"
+    >
         <div>
-            <p class="text-white">Contact Elliot</p>
-            <p class="text-orange-600 text-2xl font-semibold">
-                0033.608.770.798
-            </p>
+            <figure class="mb-5">
+                <img src={Zebatuca} alt="" />
+            </figure>
 
-            <p class="text-white">Contact Isabelle</p>
-            <p class="text-orange-600 text-2xl font-semibold">
-                0032.494.27.08.60
-            </p>
-        </div>
-        <div class="text-white space-y-5">
-            <div class="flex gap-2">
-                <a
-                    target="_blank"
-                    href="#"
-                    class="hover:bg-gray-700 p-2 rounded-md"
-                    ><Facebook />
-                </a>
-                <a
-                    target="_blank"
-                    href="#"
-                    class="hover:bg-gray-700 p-2 rounded-md"
-                    ><Instagram />
-                </a>
-            </div>
-            <p class="max-w-[64ch]">
+            <p class="text-sm max-w-sm w-full">
                 Sous la direction d'Elliot Amah, Zebatuca, c'est de la musique
                 chorégraphiée, des arts de la rue sans dessus-dessous, des
                 distributeurs de bonheur
             </p>
-            <span class="block">Site internet réalisé par loak.studio</span>
+        </div>
+        <div>
+            <div>Contact Elliot 🇫🇷</div>
+
+            <a
+                class="hover:underline text-xl font-semibold text-orange-500"
+                href="0033608770798">+33 6 08 77 07 98</a
+            >
+
+            <div>Contact Isabelle 🇧🇪</div>
+
+            <a
+                class="hover:underline text-xl font-semibold text-orange-500"
+                href="0032494270860">+32 494 27 08 60</a
+            >
+        </div>
+        <div class="flex flex-col lg:items-end gap-5">
+            <ul class="flex gap-2">
+                <li>
+                    <a
+                        class="p-1 inline-block rounded-md hover:bg-gray-600"
+                        href="#"
+                        ><Facebook />
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="p-1 inline-block rounded-md hover:bg-gray-600"
+                        href="#"
+                        ><Instagram />
+                    </a>
+                </li>
+            </ul>
+            <nav>
+                <ul class="flex gap-4 lg:gap-7">
+                    {
+                        links.map((link) => (
+                            <li>
+                                <a class="hover:underline" href={link.href}>
+                                    {link.label}
+                                </a>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </nav>
+            <span class="flex items-center gap-1">
+                Site internet réalisé par <a
+                    class="text-[#28625E] flex items-center hover:underline"
+                    target="_blank"
+                    href="https://loak.studio"
+                    ><svg
+                        class="w-5 mr-1"
+                        width="33"
+                        height="29"
+                        viewBox="0 0 33 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M31.5085 0.338696C28.9191 0.648169 26.3091 0.741097 23.7047 0.616541C22.3586 0.556136 21.0164 0.425005 19.6836 0.223675C18.5189 0.0563704 17.5987 -0.0750829 16.1396 0.0489014C10.4119 0.538864 6.35251 4.41674 5.2438 5.59235C1.30954 9.77495 0.596903 14.5192 0.253834 16.7958C-0.300929 20.5814 0.0567637 24.4471 1.29629 28.0619L1.59077 28.9208L2.48746 28.9522C3.44158 28.9841 4.40306 29 5.37189 29C6.33779 29 7.3081 28.9836 8.27399 28.9522C13.1417 28.7894 15.5845 28.7087 18.4851 27.7452C19.9148 27.2702 23.2645 26.1573 26.2461 23.1414C29.0584 20.3032 30.1112 17.2439 31.1286 14.2907C32.1151 11.4271 32.3963 8.7547 32.6231 6.60514L32.6717 6.14505C32.8292 4.66172 32.9278 3.15747 32.9661 1.67862L33 0.15496L31.5085 0.338696ZM30.0832 5.86571L30.0361 6.32878C29.8137 8.44698 29.5605 10.8475 28.6726 13.4213C27.7097 16.2162 26.8012 18.8557 24.4115 21.2711C21.8687 23.842 19.0402 24.7815 17.6797 25.2342C15.1339 26.0796 12.8208 26.1573 8.19301 26.3112C6.62932 26.362 5.05238 26.3724 3.49606 26.3366C3.45483 26.1977 3.42244 26.0572 3.38416 25.9183C3.55495 25.5882 3.73753 25.27 3.91569 24.9474C4.46155 23.9955 5.103 23.1034 5.82981 22.2854C9.39155 18.2522 14.8276 17.6158 19.878 18.7003C18.3798 17.6899 16.6647 17.0588 14.8764 16.86C13.0881 16.6611 11.2789 16.9004 9.60063 17.5576C10.5083 16.7147 11.4635 15.9261 12.4615 15.1959C16.6037 13.6664 21.0327 13.1047 25.4186 13.5527C22.9877 12.1187 20.0841 11.6512 17.2851 12.038L19.4937 10.7235C21.8657 9.29395 24.226 7.84797 26.492 6.17941C23.8556 7.0665 21.2661 8.09111 18.7339 9.24914C17.4721 9.82724 16.2308 10.4277 14.9778 11.085C14.5258 11.3255 14.0767 11.5839 13.6276 11.8528C14.8712 9.90554 15.6914 7.71172 16.0335 5.41757C14.4814 8.27246 12.7772 11.0396 10.9287 13.7066C9.69851 14.6376 8.56083 15.6882 7.5319 16.8436C8.0774 14.5677 8.23919 12.2146 8.01043 9.884C6.37165 14.8718 4.76968 19.7176 3.06906 24.6471C2.552 22.2007 2.4727 19.6799 2.83495 17.2051C3.16035 15.0376 3.76551 11.0028 7.13141 7.42821C8.07964 6.4214 11.5486 3.10519 16.3589 2.6944C17.5251 2.59432 18.1994 2.6944 19.3185 2.85125C20.7288 3.0652 22.1491 3.20431 23.5737 3.26801C25.8151 3.37497 28.0611 3.33006 30.2967 3.13357C30.2481 4.03283 30.1745 4.95599 30.0773 5.86422L30.0832 5.86571Z"
+                            fill="currentColor"></path>
+                    </svg> loak.studio
+                </a>
+            </span>
         </div>
     </div>
 </footer>
