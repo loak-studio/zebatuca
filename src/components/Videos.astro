@@ -3,7 +3,6 @@ import { config } from "../config";
 
 const videos = await fetch(config.api + "/api/videos?populate=%2A");
 const { data } = await videos.json();
-console.log(data[0].attributes.video.data.attributes.url);
 ---
 
 <section class="mt-32 px-4 md:px-0">
