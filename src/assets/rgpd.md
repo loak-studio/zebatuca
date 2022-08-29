@@ -1,40 +1,55 @@
 # RGPD
 
-## Article 1 : Préambule
+## 1 - Édition du site
 
-Les présentes conditions de vente sont conclues, d’une part, par la société L'équipage dont le siège social est situé à rue des wagnons 17, 7380 Quiévrain, inscrite à la Banque Carrefour des Entreprises sous le numéro 0721.551.227 ci-après dénommée "le vendeur" et, d’autre part, par toute personne physique ou morale souhaitant procéder à un achat via le site Internet du vendeur, dénommée ci-après "l’acheteur".
+En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet https://zebatuca.be/ l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi:
 
-## Article 2 : Objet
+Propriétaire du site : Président de l'ASBL : Boucaut Alain - ZeBatucA - Contact : zebatucaconcerts@gmail.com 0473282000 - Adresse : Rue des déportés 37A 7641 Bruyelle Belgique.
 
-Les présentes conditions de vente visent à définir les relations contractuelles entre le vendeur et l’acheteur ainsi que les conditions applicables à tout achat effectué par le biais du site du vendeur, que l’acheteur soit professionnel ou consommateur. L’acquisition d’un bien ou d’un service à travers le présent site implique une acceptation sans réserve par l’acheteur des présentes conditions de vente. Ces conditions de vente prévaudront sur toutes autres conditions générales ou particulières non expressément agréées par le vendeur. Le vendeur se réserve de pouvoir modifier ses conditions de vente à tout moment. Dans ce cas, les conditions applicables seront celles en vigueur à la date de la commande par l’acheteur.
+Identification de l'entreprise : ASBL Président de l'ASBL : Boucaut Alain - ZeBatucA au capital social de € - IBAN : BE0682930280 - Adresse postale : Rue des déportés 37A 7641 Bruyelle Belgique
 
-## Article 3 : Caractéristiques des biens et services proposés
+Hébergeur : Netlify 44 Montgomery Street Suite 300 San Francisco, CA 94104 United States
 
-Les produits et services offerts sont ceux qui figurent dans le catalogue publié sur le site du vendeur. Chaque produit est accompagné d’un descriptif établi par le fournisseur. Les photographies du catalogue sont les plus fidèles possibles mais ne peuvent assurer une similitude parfaite avec le produit offert, notamment en ce qui concerne les couleurs. Ces produits et services sont offerts dans la limite des stocks disponibles. Si, malgré ses efforts, tout ou partie des articles sont indisponibles, le vendeur en informe l’acheteur par email dans les meilleurs délais et lui offre la possibilité de choisir entre patienter ou annuler sans frais la commande des articles indisponibles. Les articles disponibles seront livrés normalement.
+## 2 - Propriété intellectuelle et contrefaçons.
 
-## Article 4 : Tarifs
+Président de l'ASBL : Boucaut Alain - ZeBatucA est propriétaire des droits de propriété intellectuelle et détient les droits d’usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, architecture, icônes et sons.
 
-Les prix des produits et services affichés sur le site sont indiqués en euros toutes taxes comprises (TVA et autres taxes applicables). Le vendeur se réserve le droit de modifier ses prix à tout moment. Néanmoins, les prix applicables à la commande sont ceux en vigueur au moment de la confirmation de celle-ci. Les prix indiqués ne comprennent pas les frais de traitement de commandes, de transport et de livraison pour autant qu’elles aient lieu dans les zones géographiques prévues ci-après.
+Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Président de l'ASBL : Boucaut Alain - ZeBatucA.
 
-## Article 5 : Zones géographiques
+Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.
 
-La vente en ligne des produits et services présentés sur le site du vendeur est réservée aux acheteurs qui résident en Belgique et en France.
+## 3 - Limitations de responsabilité.
 
-## Article 6 : Commandes
+Président de l'ASBL : Boucaut Alain - ZeBatucA ne pourra être tenu pour responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site https://zebatuca.be/.
 
-- valider sa commande après l’avoir vérifiée;
-- effectuer le paiement dans les conditions prévues;
-- confirmer sa commande et son règlement.
-  La confirmation de la commande entraîne acceptation des présentes conditions de vente, la reconnaissance d’en avoir parfaite connaissance et la renonciation à se prévaloir de ses propres conditions d’achat ou d’autres conditions. L’ensemble des données fournies et la confirmation enregistrée vaudront preuve de la transaction. La confirmation vaudra signature et acceptation des opérations effectuées. Le vendeur communiquera par courrier électronique confirmation de la commande enregistrée.
+Président de l'ASBL : Boucaut Alain - ZeBatucA décline toute responsabilité quant à l’utilisation qui pourrait être faite des informations et contenus présents sur https://zebatuca.be/.
 
-## Article 7 : Droit de renonciation
+Président de l'ASBL : Boucaut Alain - ZeBatucA s’engage à sécuriser au mieux le site https://zebatuca.be/, cependant sa responsabilité ne pourra être mise en cause si des données indésirables sont importées et installées sur son site à son insu.
 
-Conformément à la loi, le consommateur a le droit de notifier au vendeur qu’il renonce à son achat, sans pénalité et sans indication de motif, dans les 14 jours ouvrables à dater du lendemain du jour de la livraison du produit ou de la conclusion du contrat de service. Ce droit de renonciation n’appartient pas à l’acheteur professionnel. Endéans ce délai, le consommateur doit notifier son intention de renoncer par e-mail et retourner, à ses frais et à ses risques, le produit livré au siège administratif de L'équipage : rue des wagnons 17, 7380 Quiévrain. Les produits doivent être impérativement retournés dans leur emballage d’origine, non endommagés, accompagnés de tous leurs accessoires, du manuel d’utilisation ainsi que de la facture/bon de livraison original. Les produits ainsi retournés doivent ne pas avoir été déballés, descellés, utilisés d'une quelconque manière. Les marchandises incomplètes, abîmées, endommagées ou salies par le client ne seront pas reprises. Dans les 30 jours, après acceptation de la reprise de la marchandise, le vendeur s’engage à rembourser le paiement éventuel, à l’exception des frais d’envoi. Sauf convention contraire, le consommateur ne peut exercer le droit de renonciation pour les contrats :
-1° de fourniture de services dont l'exécution a commencé avec l'accord du consommateur avant la fin du délai de renonciation ;
-2° de fourniture de produits confectionnés selon les spécifications du consommateur ou nettement personnalisés ou qui, du fait de leur nature, ne peuvent être réexpédiés ou sont susceptibles de se détériorer ou de se périmer rapidement ;
-3° de fourniture d'enregistrement audio ou vidéo ou de logiciels informatiques descellés par le consommateur ;
-4° de fourniture de journaux, de périodiques ou de magazines.
+Des espaces interactifs (espace contact ou commentaires) sont à la disposition des utilisateurs. Président de l'ASBL : Boucaut Alain - ZeBatucA se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la législation applicable en France, en particulier aux dispositions relatives à la protection des données.
 
-## Article 8 : Modalités de paiement
+Le cas échéant, Président de l'ASBL : Boucaut Alain - ZeBatucA se réserve également la possibilité de mettre en cause la responsabilité civile et/ou pénale de l’utilisateur, notamment en cas de message à caractère raciste, injurieux, diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie …).
 
-Le paiement s’effectue par paiement électronique. Les articles commandés restent notre propriété exclusive jusqu’au paiement intégral de la commande par l’acheteur.
+## 4 - CNIL et gestion des données personnelles.
+
+Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée, l’utilisateur du site https://zebatuca.be/ dispose d’un droit d’accès, de modification et de suppression des informations collectées. Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données : - .
+
+Pour plus d'informations sur la façon dont nous traitons vos données (type de données, finalité, destinataire...), lisez notre https://zebatuca.be/politique-de-confidentialite.
+
+## 5 - Liens hypertextes et cookies
+
+Le site https://zebatuca.be/ contient des liens hypertextes vers d’autres sites et dégage toute responsabilité à propos de ces liens externes ou des liens créés par d’autres sites vers https://zebatuca.be/.
+
+La navigation sur le site https://zebatuca.be/ est susceptible de provoquer l’installation de cookie(s) sur l’ordinateur de l’utilisateur.
+
+Un "cookie" est un fichier de petite taille qui enregistre des informations relatives à la navigation d’un utilisateur sur un site. Les données ainsi obtenues permettent d'obtenir des mesures de fréquentation, par exemple.
+
+Vous avez la possibilité d’accepter ou de refuser les cookies en modifiant les paramètres de votre navigateur. Aucun cookie ne sera déposé sans votre consentement.
+
+Les cookies sont enregistrés pour une durée maximale de 6 mois.
+
+Pour plus d'informations sur la façon dont nous faisons usage des cookies, lisez notre https://zebatuca.be/politique-de-confidentialite.
+
+## 6 - Droit applicable et attribution de juridiction.
+
+Tout litige en relation avec l’utilisation du site https://zebatuca.be/ est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de Belge.
