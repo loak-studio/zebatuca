@@ -3,8 +3,10 @@ import Main from "../layout/Main.astro";
 ---
 
 <Main meta={{ title: "ZeBatuc'Action" }}>
-    <article class="max-w-6xl flex flex-col gap-32 w-full mx-auto markdown">
-        <div class="flex gap-14">
+    <article
+        class="max-w-6xl flex flex-col gap-6 lg:gap-32 w-full mx-auto markdown"
+    >
+        <div class="flex flex-col lg:flex-row gap-6 lg:gap-14">
             <div class="space-y-5">
                 <h2>Qui sommes nous ?</h2>
                 <p>
@@ -35,7 +37,7 @@ import Main from "../layout/Main.astro";
                 />
             </figure>
         </div>
-        <div class="flex flex-row-reverse gap-14">
+        <div class="flex flex-col lg:flex-row-reverse gap-6 lg:gap-14">
             <div class="space-y-5">
                 <h2>Notre but</h2>
                 <p>
@@ -75,7 +77,7 @@ import Main from "../layout/Main.astro";
                 />
             </figure>
         </div>
-        <div class="flex justify-between gap-14">
+        <div class="flex flex-col lg:flex-row justify-between gap-6 lg:gap-14">
             <div class="space-y-5">
                 <h2>Quelles sont nos actions</h2>
                 <p>
@@ -99,7 +101,7 @@ import Main from "../layout/Main.astro";
                 />
             </figure>
         </div>
-        <div class="flex flex-row-reverse gap-14">
+        <div class="flex flex-col lg:flex-row-reverse gap-6 lg:gap-14">
             <div class="space-y-5">
                 <h2>Comment nous soutenir ?</h2>
                 <p>
