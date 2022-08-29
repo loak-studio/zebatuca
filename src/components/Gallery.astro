@@ -5,7 +5,7 @@ const pictures = await fetch(config.api + "/api/pictures?populate=%2A");
 const { data } = await pictures.json();
 ---
 
-<section class="mt-8 px-4 md:px-0 mb-32">
+<section class="mt-32 px-4 md:px-0 mb-32">
     <div class="max-w-4xl w-full mx-auto space-y-4">
         <h2 class="text-3xl font-semibold">Quelques souvenirs</h2>
         <p class="text-gray-500">
