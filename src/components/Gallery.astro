@@ -15,7 +15,12 @@ const { data } = await pictures.json();
     <div class="max-w-6xl w-full mx-auto flex flex-wrap justify-center">
         {
             data.map((picture, index) => (
-                <figure
+                <a
+                    data-fslightbox
+                    href={
+                        config.api +
+                        picture.attributes.image.data.attributes.url
+                    }
                     class={
                         "p-1 md:p-3  w-full " +
                         (index % 2 == 0
@@ -23,15 +28,17 @@ const { data } = await pictures.json();
                             : "md:w-1/5 md:aspect-square")
                     }
                 >
-                    <img
-                        class="bg-red-500 w-full h-full object-cover"
-                        src={
-                            config.api +
-                            picture.attributes.image.data.attributes.url
-                        }
-                        alt=""
-                    />
-                </figure>
+                    <figure class="h-full w-full">
+                        <img
+                            class="bg-red-500 w-full h-full object-cover"
+                            src={
+                                config.api +
+                                picture.attributes.image.data.attributes.url
+                            }
+                            alt=""
+                        />
+                    </figure>
+                </a>
             ))
         }
     </div>
