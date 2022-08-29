@@ -1,0 +1,9 @@
+.markdown h2 {
+  @apply text-3xl font-semibold;
+}
+.markdown {
+  @apply space-y-5 my-16 px-4 xl:px-0;
+}
+.markdown h1 {
+  @apply text-center text-6xl font-bold text-orange-900 mb-10;
+}
