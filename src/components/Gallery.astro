@@ -1,8 +1,38 @@
-<section class="mt-8 px-4 md:px-0">
+---
+import { config } from "../config";
+
+const pictures = await fetch(config.api + "/api/pictures?populate=%2A");
+const { data } = await pictures.json();
+---
+
+<section class="mt-8 px-4 md:px-0 mb-32">
     <div class="max-w-4xl w-full mx-auto space-y-4">
         <h2 class="text-3xl font-semibold">Quelques souvenirs</h2>
         <p class="text-gray-500">
             Venez vivre avec nous ces moments magiques !
         </p>
+    </div>
+    <div class="max-w-6xl w-full mx-auto flex flex-wrap justify-center">
+        {
+            data.map((picture, index) => (
+                <figure
+                    class={
+                        "p-1 md:p-3  w-full " +
+                        (index % 2 == 0
+                            ? "md:w-2/5 md:aspect-[2/1]"
+                            : "md:w-1/5 md:aspect-square")
+                    }
+                >
+                    <img
+                        class="bg-red-500 w-full h-full object-cover"
+                        src={
+                            config.api +
+                            picture.attributes.image.data.attributes.url
+                        }
+                        alt=""
+                    />
+                </figure>
+            ))
+        }
     </div>
 </section>

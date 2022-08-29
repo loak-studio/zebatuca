@@ -1,3 +1,5 @@
+import { config } from "../config";
+
 window.addEventListener("load", () => {
   const form = document.querySelector("form");
   if (form) {
@@ -8,7 +10,7 @@ window.addEventListener("load", () => {
       const email = form.querySelector("input[name='email']").value;
       const phone = form.querySelector("input[name='phone']").value;
       const message = form.querySelector("textarea[name='message']").value;
-      const res = await fetch(`http://localhost:1337/api/contact-form`, {
+      const res = await fetch(`${config.api}/contact-form`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

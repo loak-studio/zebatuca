@@ -3,7 +3,7 @@ import { config } from "../config";
 import Calendar from "./Icons/Calendar.astro";
 import Pin from "./Icons/Pin.astro";
 
-const events = await fetch(config.api + "api/events");
+const events = await fetch(config.api + "/api/events");
 const { data } = await events.json();
 
 const getDateInFrench = (data) => {
