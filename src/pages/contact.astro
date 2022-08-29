@@ -5,6 +5,7 @@ import Phone from "../components/Icons/Phone.astro";
 import Mail from "../components/Icons/Mail.astro";
 import Facebook from "../components/Icons/Facebook.astro";
 import Instagram from "../components/Icons/Instagram.astro";
+import { config } from "../config";
 ---
 
 <Main meta={{ title: "Contactez-nous" }}>
@@ -53,15 +54,17 @@ import Instagram from "../components/Icons/Instagram.astro";
                 <ul class="flex mt-2">
                     <li>
                         <a
+                            target="_blank"
                             class="p-2 block hover:bg-gray-100 rounded-md transition"
-                            href="#"
+                            href={config.facebook}
                             ><Facebook />
                         </a>
                     </li>
                     <li>
                         <a
+                            target="_blank"
                             class="p-2 block hover:bg-gray-100 rounded-md transition"
-                            href="#"
+                            href={config.instagram}
                             ><Instagram />
                         </a>
                     </li>

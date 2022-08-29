@@ -2,6 +2,7 @@
 import Facebook from "./Icons/Facebook.astro";
 import Instagram from "./Icons/Instagram.astro";
 import Zebatuca from "../assets/logo-zebatuca-white.svg";
+import { config } from "../config";
 const links = [
     {
         label: "Accueil",
@@ -56,15 +57,17 @@ const links = [
             <ul class="flex gap-2">
                 <li>
                     <a
+                        target="_blank"
                         class="p-1 inline-block transition rounded-md hover:bg-gray-600"
-                        href="#"
+                        href={config.facebook}
                         ><Facebook />
                     </a>
                 </li>
                 <li>
                     <a
+                        target="_blank"
                         class="p-1 inline-block transition rounded-md hover:bg-gray-600"
-                        href="#"
+                        href={config.instagram}
                         ><Instagram />
                     </a>
                 </li>
