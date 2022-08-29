@@ -22,15 +22,15 @@ const { data } = await pictures.json();
                         picture.attributes.image.data.attributes.url
                     }
                     class={
-                        "p-1 md:p-3  w-full " +
+                        "p-1 md:p-3  w-full group hover:bg-gray-200 rounded-md transition " +
                         (index % 2 == 0
                             ? "md:w-2/5 md:aspect-[2/1]"
                             : "md:w-1/5 md:aspect-square")
                     }
                 >
-                    <figure class="h-full w-full">
+                    <figure class="h-full group-hover:opacity-60 transition w-full">
                         <img
-                            class="bg-red-500 w-full h-full object-cover"
+                            class="w-full h-full object-cover"
                             src={
                                 config.api +
                                 picture.attributes.image.data.attributes.url
