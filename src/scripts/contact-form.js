@@ -10,7 +10,7 @@ window.addEventListener("load", () => {
       const email = form.querySelector("input[name='email']").value;
       const phone = form.querySelector("input[name='phone']").value;
       const message = form.querySelector("textarea[name='message']").value;
-      const res = await fetch(`${config.api}/contact-form`, {
+      const res = await fetch(`${config.api}/api/contact-form`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
