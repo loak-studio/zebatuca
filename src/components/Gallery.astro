@@ -3,6 +3,7 @@ import { config } from "../config";
 
 const pictures = await fetch(config.api + "/api/pictures?populate=%2A");
 const { data } = await pictures.json();
+console.log(data[0].attributes.image.data.attributes.formats.medium.url);
 ---
 
 <section class="mt-32 px-4 md:px-0 mb-32">
@@ -26,7 +27,10 @@ const { data } = await pictures.json();
           <figure class="h-full group-hover:opacity-60 transition w-full">
             <img
               class="w-full h-full object-cover"
-              src={config.api + picture.attributes.image.data.attributes.url}
+              src={
+                config.api +
+                picture.attributes.image.data.attributes.formats.medium.url
+              }
               alt=""
             />
           </figure>
