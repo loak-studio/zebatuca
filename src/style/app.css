@@ -1,3 +1,6 @@
 @import "./backgrounds.css";
 @import "./accessibility.css";
 @import "./markdown.css";
+body {
+  overflow-x: hidden;
+}
