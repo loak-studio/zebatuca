@@ -4,10 +4,10 @@ window.addEventListener("load", () => {
   const body = document.querySelector("body");
   const hamburger = document.querySelector("#hamburger");
   button.addEventListener("click", () => {
+    window.scrollTo(0, 0);
     nav.classList.toggle("scale-y-0");
     nav.classList.toggle("opacity-0");
-    window.scrollTo(0, 0);
-    body.classList.toggle("overflow-hidden");
+    body.classList.toggle("overflow-y-hidden");
     hamburger.classList.toggle("pt-3");
     hamburger.children[0].classList.toggle("rotate-45");
     hamburger.children[0].classList.toggle("absolute");
