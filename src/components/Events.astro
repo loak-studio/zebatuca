@@ -32,7 +32,11 @@ const getDateInFrench = (data) => {
   >
     {
       data.map((event) => (
-        <div class="space-y-2 text-white bg-orange-500 border-2 rounded-md border-orange-600 p-5">
+        <a
+          target="_blank"
+          href={event.attributes.link}
+          class="block space-y-2 text-white bg-orange-500 border-2 transition hover:bg-orange-400 rounded-md border-orange-600 p-5"
+        >
           <span class="flex items-center gap-1">
             <Calendar />
             {getDateInFrench(event.attributes.date)}
@@ -41,7 +45,7 @@ const getDateInFrench = (data) => {
             <Pin />
             {event.attributes.name}
           </span>
-        </div>
+        </a>
       ))
     }
   </div>
