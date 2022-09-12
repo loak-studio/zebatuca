@@ -4,51 +4,53 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 const title = "ZeBatucA - Groupe de percussions et de tambours d’intervention";
 const description =
-    "Vous organisez un événement de rue et vous voulez du soleil ? Nous sommes ce qu'il vous faut. Nous? Zebatuca, une vingtaine de musiciens originaires du Valenciennois et de la Wallonie picarde Nous? C'est à un défilé de notes et de couleurs que nous vous invitons. Aux sons de nos percus, les visages s'illuminent et les corps se trémoussent.";
+  "Vous organisez un événement de rue et vous voulez du soleil ? Nous sommes ce qu'il vous faut. Nous? Zebatuca, une vingtaine de musiciens originaires du Valenciennois et de la Wallonie picarde Nous? C'est à un défilé de notes et de couleurs que nous vous invitons. Aux sons de nos percus, les visages s'illuminent et les corps se trémoussent.";
 const image = Astro.url.origin + "/share.png";
 const { meta } = Astro.props;
 ---
 
 <html lang="fr" class="scroll-smooth">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>
-            {meta && meta.title ? meta.title + " - ZeBatucA" : title}
-        </title>
-        <meta name="title" content={title} />
-        <meta name="description" content={description} />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>
+      {meta && meta.title ? meta.title + " - ZeBatucA" : title}
+    </title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
 
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={Astro.url.href} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta
-            property="og:image"
-            content={meta && meta.image ? meta.image : image}
-        />
-        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={Astro.url.href} />
-        <meta property="twitter:title" content={title} />
-        <meta property="twitter:description" content={description} />
-        <meta
-            property="twitter:image"
-            content={meta && meta.image ? meta.image : image}
-        />
-        <link rel="stylesheet" href="/slide-show/slide-show.css" />
-        <script type="module" src="/slide-show/slide-show.js"></script>
-    </head>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta
+      property="og:image"
+      content={meta && meta.image ? meta.image : image}
+    />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url.href} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta
+      property="twitter:image"
+      content={meta && meta.image ? meta.image : image}
+    />
+    <link rel="stylesheet" href="/slide-show/slide-show.css" />
+    <script type="module" src="/slide-show/slide-show.js"></script>
+  </head>
 
-    <body class="flex flex-col min-h-screen font-main md:overflow-auto">
-        <Navbar />
-        <main class="flex-1">
-            <slot />
-        </main>
-        <Footer />
-        <script>
-            import "../scripts/app.js";
-        </script>
-    </body>
+  <body
+    class="flex flex-col min-h-screen font-main md:overflow-auto overflow-x-hidden"
+  >
+    <Navbar />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+    <script>
+      import "../scripts/app.js";
+    </script>
+  </body>
 </html>
