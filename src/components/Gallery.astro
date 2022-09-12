@@ -6,7 +6,7 @@ const { data } = await pictures.json();
 console.log(data[0].attributes.image.data.attributes.formats.medium.url);
 ---
 
-<section class="mt-32 px-4 md:px-0 mb-32">
+<section id="galerie" class="mt-32 px-4 md:px-0 mb-32">
   <div class="max-w-4xl w-full mx-auto space-y-4">
     <h2 class="text-3xl font-semibold">Quelques souvenirs</h2>
     <p class="text-gray-500">Venez vivre avec nous ces moments magiques !</p>
@@ -20,8 +20,8 @@ console.log(data[0].attributes.image.data.attributes.formats.medium.url);
           class={
             "p-1 md:p-3  w-full group hover:bg-gray-200 rounded-md transition " +
             (index % 2 == 0
-              ? "md:w-2/5 md:aspect-[2/1]"
-              : "md:w-1/5 md:aspect-square")
+              ? "h-[280px]  md:aspect-[2/1]"
+              : "h-[280px] md:aspect-square")
           }
         >
           <figure class="h-full group-hover:opacity-60 transition w-full">
