@@ -7,7 +7,7 @@ const { data } = await index.json();
 ---
 
 <section class="relative flex flex-col md:flex-row justify-center">
-  <figure class="w-full h-[607px]">
+  <figure class="w-full md:h-[607px]">
     <img
       class="w-full h-full object-cover"
       src={config.api + data.attributes.Hero.data.attributes.url}
@@ -17,7 +17,7 @@ const { data } = await index.json();
   <div
     class="max-w-5xl -bottom-32 rounded-md md:shadow-lg space-y-5 md:absolute w-full mx-auto p-4 md:p-10 bg-white z-10"
   >
-    <figure class="max-w-sm mx-auto">
+    <figure class="hidden md:block max-w-sm mx-auto">
       <img class="w-full" src={Logo} alt="ZeBatucA" />
     </figure>
     <p class="text-xl font-bold md:text-center">
