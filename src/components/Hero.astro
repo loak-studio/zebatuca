@@ -1,6 +1,7 @@
 ---
 import { config } from "../config";
 import Button from "./Button.astro";
+import Logo from "../assets/logo-zebatuca.svg";
 const index = await fetch(config.api + "/api/page-d-accueil?populate=%2A");
 const { data } = await index.json();
 ---
@@ -16,7 +17,9 @@ const { data } = await index.json();
   <div
     class="max-w-5xl -bottom-32 rounded-md md:shadow-lg space-y-5 md:absolute w-full mx-auto p-4 md:p-10 bg-white z-10"
   >
-    <h1 class="text-center text-orange-600 text-6xl font-bold">ZeBatucA</h1>
+    <figure class="max-w-sm mx-auto">
+      <img class="w-full" src={Logo} alt="ZeBatucA" />
+    </figure>
     <p class="text-xl font-bold md:text-center">
       {data.attributes.subtitle}
     </p>

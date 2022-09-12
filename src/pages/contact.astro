@@ -9,134 +9,126 @@ import { config } from "../config";
 ---
 
 <Main meta={{ title: "Contactez-nous" }}>
-    <div class="bg-afro pb-32">
-        <h1
-            class="text-center px-4 lg:px-0 pt-12 mb-5 text-3xl lg:text-6xl text-orange-900 font-bold"
-        >
-            Contactez-nous
-        </h1>
-        <p class="text-center px-4 lg:px-0 mb-14">
-            Vous avez une question ou une remarque ? Envoyez-nous un message
-        </p>
-        <div
-            class="grid shadow-xl bg-white max-w-6xl w-full mx-auto gap-2.5 lg:grid-cols-3 p-2 rounded-md"
-        >
-            <div class="bg-flex flex flex-col p-7 bg-gray-200 rounded-sm">
-                <div class="flex-1">
-                    <h2 class="text-gray-900 mb-8 text-3xl font-semibold">
-                        Informations de contact
-                    </h2>
-                    <span class="mb-2 gap-2.5 flex items-center"
-                        ><Phone /> Contact Elliot 🇫🇷</span
-                    >
-                    <a
-                        href="tel:0033608770798"
-                        class="block hover:underline text-orange-500 mt-2 mb-7 text-xl font-semibold"
-                        >+33 6 08 77 07 98</a
-                    >
-                    <span class="mb-2 gap-2.5 flex items-center"
-                        ><Phone />Contact Isabelle 🇧🇪</span
-                    >
-                    <a
-                        href="tel:0032494270860"
-                        class="block hover:underline text-orange-500 mb-7 mt-2 text-xl font-semibold"
-                        >+32 494 27 08 60</a
-                    >
-                    <span class="mb-2 gap-2.5 flex items-center"
-                        ><Mail /> Email</span
-                    >
-                    <a
-                        href="mailtu:zebatuca@gmail.com"
-                        class="block hover:underline text-orange-500 mt-2 text-xl font-semibold"
-                        >Zebatuca@gmail.com</a
-                    >
-                </div>
-                <ul class="flex mt-2">
-                    <li>
-                        <a
-                            target="_blank"
-                            class="p-2 block hover:bg-gray-100 rounded-md transition"
-                            href={config.facebook}
-                            ><Facebook />
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            target="_blank"
-                            class="p-2 block hover:bg-gray-100 rounded-md transition"
-                            href={config.instagram}
-                            ><Instagram />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <form
-                action=""
-                class="grid gap-x-5 gap-y-10 p-6 lg:grid-cols-2 lg:col-span-2"
-            >
-                <div>
-                    <label class="block mb-1 text-gray-600" for="name"
-                        >Nom</label
-                    >
-                    <input
-                        required
-                        class="text-lg w-full text-gray-900 p-3.5 rounded-md border-gray-400 border"
-                        type="text"
-                        name="name"
-                        id="name"
-                    />
-                </div>
-                <div>
-                    <label class="block mb-1 text-gray-600" for="firstname"
-                        >Prénom</label
-                    >
-                    <input
-                        required
-                        class="text-lg w-full text-gray-900 p-3.5 rounded-md border-gray-400 border"
-                        type="text"
-                        name="firstname"
-                        id="firstname"
-                    />
-                </div>
-                <div>
-                    <label class="block mb-1 text-gray-600" for="email"
-                        >Adresse email</label
-                    >
-                    <input
-                        required
-                        class="text-lg w-full text-gray-900 p-3.5 rounded-md border-gray-400 border"
-                        type="email"
-                        name="email"
-                        id="email"
-                    />
-                </div>
-                <div>
-                    <label class="block mb-1 text-gray-600" for="phone"
-                        >Numéro de téléphone</label
-                    >
-                    <input
-                        required
-                        class="text-lg w-full text-gray-900 p-3.5 rounded-md border-gray-400 border"
-                        type="text"
-                        name="phone"
-                        id="phone"
-                    />
-                </div>
-                <div class="lg:col-span-2">
-                    <label class="block mb-1 text-gray-600" for="message"
-                        >Message</label
-                    >
-                    <textarea
-                        required
-                        class="text-lg w-full text-gray-900 p-3.5 rounded-md border-gray-400 border"
-                        name="message"
-                        id="message"
-                        rows="4"></textarea>
-                </div>
-                <div class="lg:col-span-2">
-                    <Button>Envoyer mon message</Button>
-                </div>
-            </form>
+  <div class="bg-afro pb-32">
+    <h1
+      class="text-center px-4 lg:px-0 pt-12 mb-5 text-3xl lg:text-6xl text-[#1AA9E1] font-bold"
+    >
+      Contactez-nous
+    </h1>
+    <p class="text-center px-4 lg:px-0 mb-14">
+      Vous avez une question ou une remarque ? Envoyez-nous un message
+    </p>
+    <div
+      class="grid shadow-xl bg-white max-w-6xl w-full mx-auto gap-2.5 lg:grid-cols-3 p-2 rounded-md"
+    >
+      <div class="bg-flex flex flex-col p-7 bg-gray-200 rounded-sm">
+        <div class="flex-1">
+          <h2 class="text-gray-900 mb-8 text-3xl font-semibold">
+            Informations de contact
+          </h2>
+          <span class="mb-2 gap-2.5 flex items-center"
+            ><Phone /> Contact Elliot 🇫🇷</span
+          >
+          <a
+            href="tel:0033608770798"
+            class="block hover:underline text-orange-500 mt-2 mb-7 text-xl font-semibold"
+            >+33 6 08 77 07 98</a
+          >
+          <span class="mb-2 gap-2.5 flex items-center"
+            ><Phone />Contact Isabelle 🇧🇪</span
+          >
+          <a
+            href="tel:0032494270860"
+            class="block hover:underline text-orange-500 mb-7 mt-2 text-xl font-semibold"
+            >+32 494 27 08 60</a
+          >
+          <span class="mb-2 gap-2.5 flex items-center"><Mail /> Email</span>
+          <a
+            href="mailtu:zebatuca@gmail.com"
+            class="block hover:underline text-orange-500 mt-2 text-xl font-semibold"
+            >Zebatuca@gmail.com</a
+          >
         </div>
+        <ul class="flex mt-2">
+          <li>
+            <a
+              target="_blank"
+              class="p-2 block hover:bg-gray-100 rounded-md transition"
+              href={config.facebook}
+              ><Facebook />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              class="p-2 block hover:bg-gray-100 rounded-md transition"
+              href={config.instagram}
+              ><Instagram />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <form
+        action=""
+        class="grid gap-x-5 gap-y-10 p-6 lg:grid-cols-2 lg:col-span-2"
+      >
+        <div>
+          <label class="block mb-1 text-gray-600" for="name">Nom</label>
+          <input
+            required
+            class="text-lg w-full text-gray-900 p-3.5 rounded-md border-gray-400 border"
+            type="text"
+            name="name"
+            id="name"
+          />
+        </div>
+        <div>
+          <label class="block mb-1 text-gray-600" for="firstname">Prénom</label>
+          <input
+            required
+            class="text-lg w-full text-gray-900 p-3.5 rounded-md border-gray-400 border"
+            type="text"
+            name="firstname"
+            id="firstname"
+          />
+        </div>
+        <div>
+          <label class="block mb-1 text-gray-600" for="email"
+            >Adresse email</label
+          >
+          <input
+            required
+            class="text-lg w-full text-gray-900 p-3.5 rounded-md border-gray-400 border"
+            type="email"
+            name="email"
+            id="email"
+          />
+        </div>
+        <div>
+          <label class="block mb-1 text-gray-600" for="phone"
+            >Numéro de téléphone</label
+          >
+          <input
+            required
+            class="text-lg w-full text-gray-900 p-3.5 rounded-md border-gray-400 border"
+            type="text"
+            name="phone"
+            id="phone"
+          />
+        </div>
+        <div class="lg:col-span-2">
+          <label class="block mb-1 text-gray-600" for="message">Message</label>
+          <textarea
+            required
+            class="text-lg w-full text-gray-900 p-3.5 rounded-md border-gray-400 border"
+            name="message"
+            id="message"
+            rows="4"></textarea>
+        </div>
+        <div class="lg:col-span-2">
+          <Button>Envoyer mon message</Button>
+        </div>
+      </form>
     </div>
+  </div>
 </Main>
