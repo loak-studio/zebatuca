@@ -6,40 +6,32 @@ const { data } = await pictures.json();
 ---
 
 <section class="mt-32 px-4 md:px-0 mb-32">
-    <div class="max-w-4xl w-full mx-auto space-y-4">
-        <h2 class="text-3xl font-semibold">Quelques souvenirs</h2>
-        <p class="text-gray-500">
-            Venez vivre avec nous ces moments magiques !
-        </p>
-    </div>
-    <div class="max-w-6xl w-full mx-auto flex flex-wrap justify-center">
-        {
-            data.map((picture, index) => (
-                <a
-                    data-fslightbox
-                    href={
-                        config.api +
-                        picture.attributes.image.data.attributes.url
-                    }
-                    class={
-                        "p-1 md:p-3  w-full group hover:bg-gray-200 rounded-md transition " +
-                        (index % 2 == 0
-                            ? "md:w-2/5 md:aspect-[2/1]"
-                            : "md:w-1/5 md:aspect-square")
-                    }
-                >
-                    <figure class="h-full group-hover:opacity-60 transition w-full">
-                        <img
-                            class="w-full h-full object-cover"
-                            src={
-                                config.api +
-                                picture.attributes.image.data.attributes.url
-                            }
-                            alt=""
-                        />
-                    </figure>
-                </a>
-            ))
-        }
-    </div>
+  <div class="max-w-4xl w-full mx-auto space-y-4">
+    <h2 class="text-3xl font-semibold">Quelques souvenirs</h2>
+    <p class="text-gray-500">Venez vivre avec nous ces moments magiques !</p>
+  </div>
+  <div class="max-w-6xl w-full mx-auto flex flex-wrap justify-center">
+    {
+      data.map((picture, index) => (
+        <a
+          data-fslightbox
+          href={config.api + picture.attributes.image.data.attributes.url}
+          class={
+            "p-1 md:p-3  w-full group hover:bg-gray-200 rounded-md transition " +
+            (index % 2 == 0
+              ? "md:w-2/5 md:aspect-[2/1]"
+              : "md:w-1/5 md:aspect-square")
+          }
+        >
+          <figure class="h-full group-hover:opacity-60 transition w-full">
+            <img
+              class="w-full h-full object-cover"
+              src={config.api + picture.attributes.image.data.attributes.url}
+              alt=""
+            />
+          </figure>
+        </a>
+      ))
+    }
+  </div>
 </section>

@@ -7,40 +7,40 @@ const events = await fetch(config.api + "/api/events");
 const { data } = await events.json();
 
 const getDateInFrench = (data) => {
-    const date = new Date(data);
-    return date.toLocaleDateString("fr-FR", {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-    });
+  const date = new Date(data);
+  return date.toLocaleDateString("fr-FR", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 };
 ---
 
 <section class="bg-gray-800 py-20 px-4">
-    <div class="max-w-4xl space-y-4 w-full mx-auto text-white">
-        <h2 class="text-3xl font-semibold">Nos prochains évènements</h2>
-        <p>
-            Au stade de Valenciennes, à la ducasse d’Ath, à la fête des Rigolos,
-            aux Turbulentes, au carnaval de Tournai....et bientôt chez vous ?
-        </p>
-    </div>
-    <div
-        class="grid max-w-6xl w-full mt-8 mx-auto sm:grid-cols-2 lg:grid-cols-4 gap-8"
-    >
-        {
-            data.map((event) => (
-                <div class="space-y-2 text-white bg-orange-700 border-2 rounded-md border-orange-800 p-5">
-                    <span class="flex items-center gap-1">
-                        <Calendar />
-                        {getDateInFrench(event.attributes.date)}
-                    </span>
-                    <span class="flex items-center gap-1">
-                        <Pin />
-                        {event.attributes.name}
-                    </span>
-                </div>
-            ))
-        }
-    </div>
+  <div class="max-w-4xl space-y-4 w-full mx-auto text-white">
+    <h2 class="text-3xl font-semibold">Nos prochains évènements</h2>
+    <p>
+      Au stade de Valenciennes, à la ducasse d’Ath, à la fête des Rigolos, aux
+      Turbulentes, au carnaval de Tournai....et bientôt chez vous ?
+    </p>
+  </div>
+  <div
+    class="grid max-w-6xl w-full mt-8 mx-auto sm:grid-cols-2 lg:grid-cols-4 gap-8"
+  >
+    {
+      data.map((event) => (
+        <div class="space-y-2 text-white bg-orange-700 border-2 rounded-md border-orange-800 p-5">
+          <span class="flex items-center gap-1">
+            <Calendar />
+            {getDateInFrench(event.attributes.date)}
+          </span>
+          <span class="flex items-center gap-1">
+            <Pin />
+            {event.attributes.name}
+          </span>
+        </div>
+      ))
+    }
+  </div>
 </section>

@@ -14,6 +14,7 @@
     "astro": "^1.0.8"
   },
   "dependencies": {
+    "@astrojs/markdown-component": "^1.0.1",
     "fslightbox": "^3.3.1"
   }
 }

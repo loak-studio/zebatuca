@@ -1,35 +1,34 @@
+---
+import { config } from "../config";
+import Markdown from "@astrojs/markdown-component";
+const index = await fetch(config.api + "/api/page-d-accueil?populate=%2A");
+const { data } = await index.json();
+---
+
 <section class="bg-motif bg-gray-900 mb-36 mt-16 md:mt-36">
-    <div class="max-w-6xl w-full mx-auto relative pt-40">
-        <div
-            class="p-4 md:p-10 z-10 relative md:-bottom-10 lg:rounded-md space-y-5 shadow-lg lg:max-w-3xl bg-white"
-        >
-            <h2 class="text-3xl font-semibold">ZeBatuc'Action</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                pretium pellentesque turpis vitae mattis. Cras rutrum turpis non
-                urna mattis maximus. Quisque condimentum sit amet purus vitae
-                vehicula. Mauris pretium, nisl ac consequat ultrices, dui est
-                scelerisque libero, at congue elit neque eget diam. Nulla
-                lobortis ligula vitae elit vulputate tempus et non metus.
-                Suspendisse volutpat elementum aliquet. Duis a diam elit.
-            </p>
-            <a
-                class="bg-white inline-block text-orange-600 hover:text-gray-500 md:rounded-md hover:bg-orange-200 transition px-7 py-4"
-                href="/zebatucaction"
-            >
-                En savoir plus
-            </a>
-        </div>
-        <div
-            class="lg:absolute right-0 top-10 bg-orange-200 lg:p-2.5 rounded-md"
-        >
-            <figure class="w-full bg-white rounded-sm">
-                <img
-                    class="w-full"
-                    src="https://www.fillmurray.com/470/320"
-                    alt=""
-                />
-            </figure>
-        </div>
+  <div class="max-w-6xl w-full mx-auto relative pt-40">
+    <div
+      class="p-4 md:p-10 z-10 relative md:-bottom-10 lg:rounded-md space-y-5 shadow-lg lg:max-w-3xl bg-white"
+    >
+      <h2 class="text-3xl font-semibold">ZeBatuc'Action</h2>
+
+      <Markdown>{data.attributes.zebatucactionText}</Markdown>
+      <a
+        class="bg-white inline-block text-orange-600 hover:text-gray-500 md:rounded-md hover:bg-orange-200 transition px-7 py-4"
+        href="/zebatucaction"
+      >
+        En savoir plus
+      </a>
     </div>
+    <div class="lg:absolute right-0 top-10 bg-orange-200 lg:p-2.5 rounded-md">
+      <figure class="w-full bg-white rounded-sm max-w-md">
+        <img
+          class="w-full"
+          src={config.api +
+            data.attributes.zebatucactionPicture.data.attributes.url}
+          alt=""
+        />
+      </figure>
+    </div>
+  </div>
 </section>

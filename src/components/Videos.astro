@@ -6,32 +6,27 @@ const { data } = await videos.json();
 ---
 
 <section class="mt-32 px-4 md:px-0">
-    <div class="max-w-4xl w-full mx-auto space-y-4">
-        <h2 class="text-3xl font-semibold">Nos plus beaux moments</h2>
-        <p class="text-gray-500">
-            Venez nous voir et partager avec nous la joie de danser sur des
-            rythmes percutants
-        </p>
-    </div>
-    <div class="max-w-4xl w-full mx-auto mt-16">
-        <slide-show loop controls="navigation">
-            {
-                data.map((video) => (
-                    <div class="flex justify-center">
-                        <video controls class="aspect-video lg:h-96 bg-red-500">
-                            <source
-                                src={
-                                    config.api +
-                                    video.attributes.video.data.attributes.url
-                                }
-                                type={
-                                    video.attributes.video.data.attributes.mime
-                                }
-                            />
-                        </video>
-                    </div>
-                ))
-            }
-        </slide-show>
-    </div>
+  <div class="max-w-4xl w-full mx-auto space-y-4">
+    <h2 class="text-3xl font-semibold">Nos plus beaux moments</h2>
+    <p class="text-gray-500">
+      Venez nous voir et partager avec nous la joie de danser sur des rythmes
+      percutants
+    </p>
+  </div>
+  <div class="max-w-4xl w-full mx-auto mt-16">
+    <slide-show loop controls="navigation">
+      {
+        data.map((video) => (
+          <div class="flex justify-center">
+            <video controls class="aspect-video lg:h-96 bg-red-500">
+              <source
+                src={config.api + video.attributes.video.data.attributes.url}
+                type={video.attributes.video.data.attributes.mime}
+              />
+            </video>
+          </div>
+        ))
+      }
+    </slide-show>
+  </div>
 </section>
