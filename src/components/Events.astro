@@ -9,7 +9,6 @@ const { data } = await events.json();
 const getDateInFrench = (data) => {
   const date = new Date(data);
   return date.toLocaleDateString("fr-FR", {
-    weekday: "long",
     year: "numeric",
     month: "long",
     day: "numeric",
