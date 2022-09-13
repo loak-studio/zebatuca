@@ -3,6 +3,7 @@ import { config } from "../config";
 import Markdown from "@astrojs/markdown-component";
 const index = await fetch(config.api + "/api/page-d-accueil?populate=%2A");
 const { data } = await index.json();
+console.log(data.attributes.zebatucactionPicture.data);
 ---
 
 <section class="bg-motif-2 bg-gray-900 mb-36">
@@ -24,6 +25,8 @@ const { data } = await index.json();
       <figure class="w-full bg-white rounded-sm max-w-md">
         <img
           class="w-full"
+          height={data.attributes.zebatucactionPicture.data.attributes.height}
+          width={data.attributes.zebatucactionPicture.data.attributes.width}
           src={config.api +
             data.attributes.zebatucactionPicture.data.attributes.url}
           alt=""
