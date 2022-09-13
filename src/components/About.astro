@@ -5,8 +5,8 @@ const index = await fetch(config.api + "/api/page-d-accueil?populate=%2A");
 const { data } = await index.json();
 ---
 
-<div id="a-propos" class="p-4 w-screen mb-16 md:mb-32">
-  <div class="bg-afro w-full pt-16 md:pt-64">
+<div id="a-propos" class="p-4 w-screen">
+  <div class="bg-afro w-full pt-16 md:pt-64 pb-16 md:pb-32">
     <div class="max-w-4xl w-full mx-auto space-y-4">
       <h2 class="text-3xl font-semibold">
         {data.attributes.aboutTitle}
