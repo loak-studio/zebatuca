@@ -3,6 +3,7 @@ import { config } from "../config";
 
 const pictures = await fetch(config.api + "/api/pictures?populate=%2A");
 const { data } = await pictures.json();
+console.log(data[0].attributes.name);
 ---
 
 <section id="galerie" class="mt-32 px-4 md:px-0 mb-32">
@@ -15,6 +16,7 @@ const { data } = await pictures.json();
       data.map((picture, index) => (
         <a
           data-fslightbox
+          title={picture.attributes.name}
           href={config.api + picture.attributes.image.data.attributes.url}
           class={
             "p-1 md:p-3  w-full group hover:bg-gray-200 rounded-md transition " +
