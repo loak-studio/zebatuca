@@ -14,8 +14,18 @@ const { data } = await index.json();
       srcset={config.api + data.attributes.Hero.data.attributes.url + "?format=webp"}
       height={data.attributes.Hero.data.attributes.height}
       width={data.attributes.Hero.data.attributes.width}
+      media="(min-width: 1000px)"
       type="image/webp"
     />
+    <source
+    class="w-full h-full object-cover"
+    srcset={config.api + data.attributes.Hero.data.attributes.url + "?format=webp&width=800"}
+    height={data.attributes.Hero.data.attributes.height}
+    width={data.attributes.Hero.data.attributes.width}
+    media="(max-width: 999px)"
+    type="image/webp"
+  />
+    
       <img
       class="w-full h-full object-cover"
       src={config.api + data.attributes.Hero.data.attributes.url}
