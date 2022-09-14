@@ -25,6 +25,15 @@ const { data } = await pictures.json();
           }
         >
           <figure class="h-full group-hover:opacity-60 transition w-full">
+           <picture>
+            <source
+            class="w-full h-full object-cover"
+              srcset={
+                config.api +
+                picture.attributes.image.data.attributes.formats.small.url + "?format=webp"
+              }
+              type="image/webp"
+            >
             <img
               class="w-full h-full object-cover"
               src={
@@ -33,6 +42,8 @@ const { data } = await pictures.json();
               }
               alt=""
             />
+            </picture>
+            
           </figure>
         </a>
       ))

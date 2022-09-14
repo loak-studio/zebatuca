@@ -19,11 +19,19 @@ const { data } = await index.json();
       <figure
         class="shrink-0 aspect-[4/3] max-w-xl w-full bg-orange-200 p-1 md:p-2.5 rounded-md"
       >
-        <img
+        <picture>
+
+          <source
+          class="rounded-sm w-full h-full object-cover"
+          srcset={config.api + data.attributes.aboutPicture.data.attributes.url + "?format=webp"}
+          type="image/webp"
+          >
+          <img
           class="rounded-sm w-full h-full object-cover"
           src={config.api + data.attributes.aboutPicture.data.attributes.url}
           alt=""
         />
+        </picture>
       </figure>
       <div class="leading-relaxed space-y-2.5 text-gray-900">
         <Markdown>
