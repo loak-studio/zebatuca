@@ -1,5 +1,5 @@
 export const config = {
-  api: "https://strapi-zebatuca.loak.studio",
+  api: "https://admin.zebatuca.be",
   facebook: "https://www.facebook.com/people/Zebatuca/100046798485449/",
   instagram: "https://www.instagram.com/zebatucaconcerts/",
 };
