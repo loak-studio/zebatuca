@@ -27,6 +27,7 @@ const { data } = await index.json();
           type="image/webp"
           >
           <img
+          loading="lazy"
           class="rounded-sm w-full h-full object-cover"
           src={config.api + data.attributes.aboutPicture.data.attributes.url}
           alt=""

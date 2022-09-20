@@ -18,7 +18,7 @@ const { data } = await videos.json();
       {
         data.map((video) => (
           <div class="flex justify-center">
-            <video controls class="aspect-video lg:h-96">
+            <video preload="none" controls class="aspect-video lg:h-96">
               <source
                 src={config.api + video.attributes.video.data.attributes.url}
                 type={video.attributes.video.data.attributes.mime}

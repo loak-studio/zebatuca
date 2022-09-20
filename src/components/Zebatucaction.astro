@@ -33,6 +33,7 @@ const { data } = await index.json();
           data.attributes.zebatucactionPicture.data.attributes.url + "?format=webp"}
       />
         <img
+        loading="lazy"
         class="w-full"
         height={data.attributes.zebatucactionPicture.data.attributes.height}
         width={data.attributes.zebatucactionPicture.data.attributes.width}
