@@ -1,0 +1,6 @@
+/assets/*
+  Cache-Control: max-age=259200
+/slide-show/*
+  Cache-Control: max-age=259200
+/favicon.ico
+  Cache-Control: max-age=259200
