@@ -1,6 +1,7 @@
 ---
 import { config } from "../config";
 import Calendar from "./Icons/Calendar.astro";
+import Clock from "./Icons/Clock.astro";
 import Pin from "./Icons/Pin.astro";
 
 const events = await fetch(config.api + "/api/events");
@@ -41,6 +42,10 @@ const getDateInFrench = (data) => {
             <Calendar />
             {getDateInFrench(event.attributes.date)}
           </span>
+          {event.attributes.time && <span class="flex items-center gap-1">
+            <Clock/>
+            {event.attributes.time}
+            </span>}
           <span class="flex items-center gap-1">
             <Pin />
             {event.attributes.place}
