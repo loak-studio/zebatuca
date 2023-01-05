@@ -27,7 +27,8 @@ const { data } = await index.json();
   />
     
       <img
-      class="w-full h-full object-cover"
+      onload="this.style.opacity=1"
+      class="w-full h-full object-cover opacity-0 transition"
       src={config.api + data.attributes.Hero.data.attributes.url}
       height={data.attributes.Hero.data.attributes.height}
       width={data.attributes.Hero.data.attributes.width}
