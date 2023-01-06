@@ -34,8 +34,8 @@ const getDateInFrench = (data) => {
       data.map((event) => (
         <a
           target="_blank"
-          href={event.attributes.link ?? "#"}
-          class="block space-y-2 text-gray-900 bg-gray-100 border-2 transition hover:bg-orange-200 rounded-md border-orange-600 p-5"
+          href={event.attributes.link}
+          class={"block space-y-2 text-gray-900 bg-gray-100 border-2 transition  rounded-md border-orange-600 p-5" + " " + (event.attributes.link ? "hover:bg-orange-200" : "")}
         >
           <span class=" text-sm font-semibold">{event.attributes.name}</span>
           <span class="flex items-center gap-1">
